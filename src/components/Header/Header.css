@@ -1,0 +1,19 @@
+.title{
+    color: blueviolet;
+    /* font-size: 40px; */
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: aqua;
+}
+.exercise{
+    /* background-color: brown; */
+     margin-top: 100px;
+    margin-left: 100px;
+}
+.statusBar{
+    background-color: bisque;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+}
