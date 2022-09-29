@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
+import './Exercise.css'
 
 const Exercise = () => {
     const [exercise, setExercise] = useState([])
@@ -9,8 +10,8 @@ const Exercise = () => {
             .then(data => setExercise(data))
     } ,[])
     return (
-        
-        <div className='product'>
+        <div className='title'>
+            <div className="product">
             {
                 exercise.map(exercis => <Card 
                     key={exercis.id}
@@ -18,6 +19,11 @@ const Exercise = () => {
                     ></Card>)
             }
         </div>
+            <div className='statusBar'>
+                <h1>side bar</h1>
+            </div>
+        </div>
+        
     );
 };
 

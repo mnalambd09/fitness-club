@@ -1,0 +1,13 @@
+.title{
+    color: blueviolet;
+    /* font-size: 40px; */
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgb(236, 236, 236);
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
