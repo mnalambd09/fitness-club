@@ -2,17 +2,18 @@ import React from 'react';
 import './Status.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import noor from "../Status/noor.jpg";
 
 const Status = () => {
     return (
         <div>
-            <div>
-                <div>
-                    <img src="" alt="" />
+            <div className='img-section'>
+                <div className='my-img'>
+                    <img src={noor} alt="" />
                 </div>
                 <div>
-                    <h4>Noor Alam</h4>
-                    <p><FontAwesomeIcon icon={faLocationPin} />Bangladesh</p>
+                    <h4 className='name'>Noor Alam</h4>
+                    <p className='location'><FontAwesomeIcon icon={faLocationPin} />Bangladesh</p>
                 </div>
             </div>
             <div className='body-status'>

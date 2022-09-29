@@ -57,3 +57,27 @@
     border-radius: 10px;
     color: white;
 }
+.my-img{
+    width: 50px;
+    height: 50px;
+    
+}
+.my-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    
+}
+.img-section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.name{
+    margin-top: 0px;
+}
+.location{
+    margin-top: -20px;
+    font-size: 12px;
+}
