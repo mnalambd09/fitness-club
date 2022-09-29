@@ -8,11 +8,11 @@
 }
 .exercise{
     /* background-color: brown; */
-     margin-top: 100px;
+     margin-top: 25px;
     margin-left: 100px;
 }
 .statusBar{
-    background-color: bisque;
+    background-color:white;
     padding: 20px;
     position: sticky;
     top: 0px;

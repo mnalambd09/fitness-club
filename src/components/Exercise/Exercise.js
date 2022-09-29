@@ -20,7 +20,7 @@ const Exercise = () => {
             }
         </div>
             <div className='statusBar'>
-                <h1>side bar</h1>
+                <h1></h1>
             </div>
         </div>
         
