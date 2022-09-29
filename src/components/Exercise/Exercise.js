@@ -4,6 +4,13 @@ import './Exercise.css'
 
 const Exercise = () => {
     const [exercise, setExercise] = useState([])
+    const [seconds, setSeconds] = useState([])
+    const addToCartHandler = (exercis) => {
+        // console.log(exercis)
+        // cart.push(product);
+        // const newCart = [...seconds]
+        setSeconds(exercis);
+    }
     useEffect(()=> {
         fetch('fitnessData.json')
             .then(res => res.json())
@@ -16,6 +23,7 @@ const Exercise = () => {
                 exercise.map(exercis => <Card 
                     key={exercis.id}
                     exercis = {exercis}
+                    addToCartHandler = {()=>addToCartHandler(exercis)}
                     ></Card>)
             }
         </div>

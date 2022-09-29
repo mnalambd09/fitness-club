@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css'
 
 const Card = (props) => {
-    console.log(props)
+    // console.log(props)
     const {name, img, Description, age, time} = props.exercis || '';
     return (
         <div className='card-section'>
