@@ -3,11 +3,10 @@ import './Status.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import noor from "../Status/noor.jpg";
+import Exercise from '../Exercise/Exercise';
 
 const Status = (props) => {
-    console.log(props)
-    const [seconds, setSeconds] = useState([])
-
+    console.log(props.exercis)
 
     const addBreakTime10 = () => {
         const display = document.getElementById('displaySeconds');
@@ -80,7 +79,7 @@ const Status = (props) => {
                     <h4>Exercise Time</h4>
                 </div>
                 <div className='exercise-seconds'>
-                    <p>200 <small>seconds</small></p>
+                    <p>{props?.exercis?.time} <small>seconds</small></p>
                 </div>
             </div>
             <br />
@@ -89,7 +88,7 @@ const Status = (props) => {
                     <h4>Break Time</h4>
                 </div>
                 <div className='exercise-seconds'>
-                    <p id='displaySeconds'>15 <small>seconds</small></p>
+                    <p id='displaySeconds'>0 <small>seconds</small></p>
                 </div>
             </div>
 

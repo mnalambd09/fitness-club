@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
+import Status from '../Status/Status';
 import './Exercise.css'
 
 const Exercise = () => {
     const [exercise, setExercise] = useState([])
     const [seconds, setSeconds] = useState([])
-    const addToCartHandler = (exercis) => {
-        // console.log(exercis)
-        // cart.push(product);
-        // const newCart = [...seconds]
-        setSeconds(exercis);
+    
+    const exerciseTime = (exercis) => {
+        console.log(exercis)
+        const newTime = [...seconds, exercis]
+        setSeconds(newTime);
     }
     useEffect(()=> {
         fetch('fitnessData.json')
@@ -23,12 +24,12 @@ const Exercise = () => {
                 exercise.map(exercis => <Card 
                     key={exercis.id}
                     exercis = {exercis}
-                    addToCartHandler = {()=>addToCartHandler(exercis)}
+                    exerciseTimeHandler = {exerciseTime}
                     ></Card>)
             }
         </div>
             <div className='statusBar'>
-                <h1></h1>
+                <h1>hello</h1>
             </div>
         </div>
         

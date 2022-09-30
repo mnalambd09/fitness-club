@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState } from 'react';
+import Status from '../Status/Status';
 import './Card.css'
 
 const Card = (props) => {
-    // console.log(props)
+    const {exerciseTimeHandler} = props;
+    // const [times, setTimes] = useState([props.exercis])
+   console.log(props.exercis)
     const {name, img, Description, age, time} = props.exercis || '';
     return (
         <div className='card-section'>
@@ -12,8 +15,10 @@ const Card = (props) => {
                 <p>{Description} </p>
                 <p>For Age : {age}</p>
                 <p>Time Required : {time}s</p>
+                
             </div>
-            <button className='btn'>Add to list</button>
+            {/* <Status exercis={props.exercis}></Status> */}
+            <button onClick={()=>exerciseTimeHandler(props.exercis)} className='btn'>Add to list</button>
         </div>
     );
 };
