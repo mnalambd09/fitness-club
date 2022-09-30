@@ -5,8 +5,14 @@ import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import noor from "../Status/noor.jpg";
 import Exercise from '../Exercise/Exercise';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Status = (props) => {
     console.log(props.exercis)
+
+        const notify = () => toast("WOW!! Congratulations, Activity Completed");
+
 
     const addBreakTime10 = () => {
         const display = document.getElementById('displaySeconds');
@@ -93,7 +99,8 @@ const Status = (props) => {
             </div>
 
             <div>
-                <button className='btn-activity'>Activity Completed</button>
+                <button onClick={notify} className='btn-activity'>Activity Completed</button>
+            <ToastContainer />
             </div>
             
         </div>

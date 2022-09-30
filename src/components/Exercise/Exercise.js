@@ -6,7 +6,7 @@ import './Exercise.css'
 const Exercise = () => {
     const [exercise, setExercise] = useState([])
     const [seconds, setSeconds] = useState([])
-    
+
     const exerciseTime = (exercis) => {
         console.log(exercis)
         const newTime = [...seconds, exercis]
@@ -29,7 +29,7 @@ const Exercise = () => {
             }
         </div>
             <div className='statusBar'>
-                <h1>hello</h1>
+                <h1></h1>
             </div>
         </div>
         
