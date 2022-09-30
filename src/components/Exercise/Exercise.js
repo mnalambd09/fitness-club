@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
-import Status from '../Status/Status';
 import './Exercise.css'
 
 const Exercise = () => {
@@ -8,7 +7,6 @@ const Exercise = () => {
     const [seconds, setSeconds] = useState([])
 
     const exerciseTime = (exercis) => {
-        console.log(exercis)
         const newTime = [...seconds, exercis]
         setSeconds(newTime);
     }
